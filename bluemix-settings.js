@@ -31,6 +31,7 @@ var settings = module.exports = {
 
     // Add the bluemix-specific nodes in
     nodesDir: path.join(__dirname,"nodes"),
+    userDir: __dirname,
 
     // Blacklist the non-bluemix friendly nodes
     nodesExcludes:['66-mongodb.js','75-exec.js','35-arduino.js','36-rpi-gpio.js','25-serial.js','28-tail.js','50-file.js','31-tcpin.js','32-udp.js','23-watch.js'],
@@ -44,7 +45,7 @@ var settings = module.exports = {
 
     // You can protect the user interface with a userid and password by using the following property
     // the password must be an md5 hash  eg.. 5f4dcc3b5aa765d61d8327deb882cf99 ('password')
-    //httpAdminAuth: {user:"user",pass:"5f4dcc3b5aa765d61d8327deb882cf99"},
+    httpAdminAuth: {user:"admin",pass:"c48bc58651a142d865f9e29a47bb05dc"},
 
     // Serve up the welcome page
     httpStatic: path.join(__dirname,"public"),
